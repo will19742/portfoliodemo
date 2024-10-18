@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 65px;
+    background-color: #7b1fa2;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.cara{
+    border-radius: 500px;
+    height: 200px;
+}
+
+.uno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background-color: #303030;
+    color: white;
+    /* padding-top: 10%; */
+}
+
+.caja-central{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+}
+
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #424242;
+}
+
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #F2F2F2;
+    color: #303030;
+    padding: 10px;
+}
+
+.dos{
+    background-color: #F2F2F2;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.aptitudes{
+    width: 50%;
+}
+
+.tech-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.tech{
+    height: 90px;
+}
+
+.tres{
+    background-color: #303030;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    color: #F2F2F2;
+    padding: 20px 0; /* Añadido padding para mejor espaciamiento */
+}
+
+.proyectos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px; /* Añade padding para evitar que las tarjetas toquen los bordes */
+}
+
+.card{
+    flex: 0 0 auto; /* Evita que las tarjetas se encojan */
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #424242; /* Añadido fondo para contraste */
+    color: #F2F2F2; /* Texto blanco para legibilidad */
+}
+
+.card h3{
+    color: #F2F2F2; /* Asegura que el título sea legible */
+}
+
+.card p{
+    color: #F2F2F2; /* Asegura que la descripción sea legible */
+}
+
+.card a{
+    color: #FF0000; /* Color destacado para enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover{
+    text-decoration: underline;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* Opcional: añade bordes redondeados al contenedor del video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.red-social{
+    height: 60px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 0 10px; /* Añadido margen para separación */
+}
+
+footer{
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+    padding-top: 20px; /* Añadido padding para mejor espaciamiento */
+}
+
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #F2F2F2; /* Asegura que los enlaces sean legibles */
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+footer p a {
+    color: #7b1f;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    .caja-central{
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+    }
+    .caja-cara{
+        width: 100%;
+        height: 50%;
+    }
+    .caja-presentacion{
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
+    .aptitudes{
+        width: auto;
+    }
+    .dos{
+        height: auto;
+        padding: 0 10px 10px 10px;
+    }
+    .tres{
+        height: auto;
+    }
+    .proyectos{
+        flex-direction: row; /* Mantiene una fila */
+        flex-wrap: nowrap; /* Evita que las tarjetas se envuelvan */
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+    .card{
+        width: 80%; /* Ajusta el ancho en pantallas más pequeñas */
+        margin-top: 20px;
+    }
+    .red-social{
+        margin: 0 10px 0 10px;
+    }
+}
